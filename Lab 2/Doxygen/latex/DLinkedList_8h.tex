@@ -1,0 +1,275 @@
+\hypertarget{DLinkedList_8h}{}\doxysection{DLinked\+List.\+h File Reference}
+\label{DLinkedList_8h}\index{DLinkedList.h@{DLinkedList.h}}
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structnode__t}{node\+\_\+t}}
+\item 
+struct \mbox{\hyperlink{structDLList__t}{DLList\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{DLinkedList_8h_a98606062334ae68e7329990b0a12493f}{DLList}}~struct \mbox{\hyperlink{structDLList__t}{DLList\+\_\+t}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{DLinkedList_8h_a98606062334ae68e7329990b0a12493f}{DLList}} $\ast$ \mbox{\hyperlink{DLinkedList_8h_a962619a93e9e57545a97f630d01182fb}{create\+DLList}} ()
+\begin{DoxyCompactList}\small\item\em Creates a new doubly linked list. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{DLinkedList_8h_afb7338bdf88baa664e735ecee02855b9}{size}} (\mbox{\hyperlink{DLinkedList_8h_a98606062334ae68e7329990b0a12493f}{DLList}} $\ast$the\+List)
+\begin{DoxyCompactList}\small\item\em Returns the number of items in the list. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{DLinkedList_8h_a65d27159c330ec669222dfbf42aa789c}{push}} (\mbox{\hyperlink{DLinkedList_8h_a98606062334ae68e7329990b0a12493f}{DLList}} $\ast$the\+List, int new\+Data)
+\begin{DoxyCompactList}\small\item\em Adds an item to the front of the list. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{DLinkedList_8h_a8149a1e0277c15bb531f0c1a39d98807}{pop}} (\mbox{\hyperlink{DLinkedList_8h_a98606062334ae68e7329990b0a12493f}{DLList}} $\ast$the\+List)
+\begin{DoxyCompactList}\small\item\em Removes an item from the front of the list. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{DLinkedList_8h_af77b24068743456daacf6b52cca68650}{get\+Current}} (\mbox{\hyperlink{DLinkedList_8h_a98606062334ae68e7329990b0a12493f}{DLList}} $\ast$the\+List)
+\begin{DoxyCompactList}\small\item\em Returns the data at the current position in the list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{DLinkedList_8h_a6c875a95502f04c78742f93ccc8ca89a}{first}} (\mbox{\hyperlink{DLinkedList_8h_a98606062334ae68e7329990b0a12493f}{DLList}} $\ast$the\+List)
+\begin{DoxyCompactList}\small\item\em Moves the current pointer to the start of the list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{DLinkedList_8h_a5dde8a86a52a410677c98a1654fffc53}{next}} (\mbox{\hyperlink{DLinkedList_8h_a98606062334ae68e7329990b0a12493f}{DLList}} $\ast$the\+List)
+\begin{DoxyCompactList}\small\item\em Moves the current pointer to the next element in the list. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{DLinkedList_8h_a24f5f72b5b212be3d011b35e5bc72e0b}{at\+End}} (\mbox{\hyperlink{DLinkedList_8h_a98606062334ae68e7329990b0a12493f}{DLList}} $\ast$the\+List)
+\begin{DoxyCompactList}\small\item\em Checks if the current pointer is at the end of the list. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{DLinkedList_8h_a5193538fcf1d18977029d7a4cde492d6}{delete\+Current}} (\mbox{\hyperlink{DLinkedList_8h_a98606062334ae68e7329990b0a12493f}{DLList}} $\ast$the\+List)
+\begin{DoxyCompactList}\small\item\em Deletes the current element from the list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{DLinkedList_8h_a7fc0f55dd8671ec055076c9b97b01471}{insert\+After}} (\mbox{\hyperlink{DLinkedList_8h_a98606062334ae68e7329990b0a12493f}{DLList}} $\ast$the\+List, int new\+Data)
+\begin{DoxyCompactList}\small\item\em Inserts data after the current element in the list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{DLinkedList_8h_ad50343513e67bcac102c4b19bbb177be}{insert\+Before}} (\mbox{\hyperlink{DLinkedList_8h_a98606062334ae68e7329990b0a12493f}{DLList}} $\ast$the\+List, int new\+Data)
+\begin{DoxyCompactList}\small\item\em Inserts data before the current element in the list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{DLinkedList_8h_a1f1256059dad7c5f25292ae739fa9906}{print\+List}} (\mbox{\hyperlink{DLinkedList_8h_a98606062334ae68e7329990b0a12493f}{DLList}} $\ast$the\+List)
+\begin{DoxyCompactList}\small\item\em Prints the entire list. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{DLinkedList_8h_a6933dfcd73eda69bc2bf15b7042405f2}{free\+DLList}} (\mbox{\hyperlink{DLinkedList_8h_a98606062334ae68e7329990b0a12493f}{DLList}} $\ast$the\+List)
+\begin{DoxyCompactList}\small\item\em Frees the memory used by the doubly linked list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{DLinkedList_8h_a98606062334ae68e7329990b0a12493f}\label{DLinkedList_8h_a98606062334ae68e7329990b0a12493f}} 
+\index{DLinkedList.h@{DLinkedList.h}!DLList@{DLList}}
+\index{DLList@{DLList}!DLinkedList.h@{DLinkedList.h}}
+\doxysubsubsection{\texorpdfstring{DLList}{DLList}}
+{\footnotesize\ttfamily \#define DLList~struct \mbox{\hyperlink{structDLList__t}{DLList\+\_\+t}}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{DLinkedList_8h_a24f5f72b5b212be3d011b35e5bc72e0b}\label{DLinkedList_8h_a24f5f72b5b212be3d011b35e5bc72e0b}} 
+\index{DLinkedList.h@{DLinkedList.h}!atEnd@{atEnd}}
+\index{atEnd@{atEnd}!DLinkedList.h@{DLinkedList.h}}
+\doxysubsubsection{\texorpdfstring{atEnd()}{atEnd()}}
+{\footnotesize\ttfamily bool at\+End (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{DLinkedList_8h_a98606062334ae68e7329990b0a12493f}{DLList}} $\ast$}]{the\+List }\end{DoxyParamCaption})}
+
+
+
+Checks if the current pointer is at the end of the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the\+List} & A pointer to the DLList struct. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the current pointer is at the end, otherwise false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{DLinkedList_8h_a962619a93e9e57545a97f630d01182fb}\label{DLinkedList_8h_a962619a93e9e57545a97f630d01182fb}} 
+\index{DLinkedList.h@{DLinkedList.h}!createDLList@{createDLList}}
+\index{createDLList@{createDLList}!DLinkedList.h@{DLinkedList.h}}
+\doxysubsubsection{\texorpdfstring{createDLList()}{createDLList()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{DLinkedList_8h_a98606062334ae68e7329990b0a12493f}{DLList}} $\ast$ create\+DLList (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a new doubly linked list. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the new doubly linked list. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{DLinkedList_8h_a5193538fcf1d18977029d7a4cde492d6}\label{DLinkedList_8h_a5193538fcf1d18977029d7a4cde492d6}} 
+\index{DLinkedList.h@{DLinkedList.h}!deleteCurrent@{deleteCurrent}}
+\index{deleteCurrent@{deleteCurrent}!DLinkedList.h@{DLinkedList.h}}
+\doxysubsubsection{\texorpdfstring{deleteCurrent()}{deleteCurrent()}}
+{\footnotesize\ttfamily int delete\+Current (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{DLinkedList_8h_a98606062334ae68e7329990b0a12493f}{DLList}} $\ast$}]{the\+List }\end{DoxyParamCaption})}
+
+
+
+Deletes the current element from the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the\+List} & A pointer to the DLList struct. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of elements remaining in the list after deletion. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{DLinkedList_8h_a6c875a95502f04c78742f93ccc8ca89a}\label{DLinkedList_8h_a6c875a95502f04c78742f93ccc8ca89a}} 
+\index{DLinkedList.h@{DLinkedList.h}!first@{first}}
+\index{first@{first}!DLinkedList.h@{DLinkedList.h}}
+\doxysubsubsection{\texorpdfstring{first()}{first()}}
+{\footnotesize\ttfamily void first (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{DLinkedList_8h_a98606062334ae68e7329990b0a12493f}{DLList}} $\ast$}]{the\+List }\end{DoxyParamCaption})}
+
+
+
+Moves the current pointer to the start of the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the\+List} & A pointer to the DLList struct. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{DLinkedList_8h_a6933dfcd73eda69bc2bf15b7042405f2}\label{DLinkedList_8h_a6933dfcd73eda69bc2bf15b7042405f2}} 
+\index{DLinkedList.h@{DLinkedList.h}!freeDLList@{freeDLList}}
+\index{freeDLList@{freeDLList}!DLinkedList.h@{DLinkedList.h}}
+\doxysubsubsection{\texorpdfstring{freeDLList()}{freeDLList()}}
+{\footnotesize\ttfamily void free\+DLList (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{DLinkedList_8h_a98606062334ae68e7329990b0a12493f}{DLList}} $\ast$}]{the\+List }\end{DoxyParamCaption})}
+
+
+
+Frees the memory used by the doubly linked list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the\+List} & A pointer to the DLList struct. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{DLinkedList_8h_af77b24068743456daacf6b52cca68650}\label{DLinkedList_8h_af77b24068743456daacf6b52cca68650}} 
+\index{DLinkedList.h@{DLinkedList.h}!getCurrent@{getCurrent}}
+\index{getCurrent@{getCurrent}!DLinkedList.h@{DLinkedList.h}}
+\doxysubsubsection{\texorpdfstring{getCurrent()}{getCurrent()}}
+{\footnotesize\ttfamily int get\+Current (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{DLinkedList_8h_a98606062334ae68e7329990b0a12493f}{DLList}} $\ast$}]{the\+List }\end{DoxyParamCaption})}
+
+
+
+Returns the data at the current position in the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the\+List} & A pointer to the DLList struct. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The data at the current position (an integer). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{DLinkedList_8h_a7fc0f55dd8671ec055076c9b97b01471}\label{DLinkedList_8h_a7fc0f55dd8671ec055076c9b97b01471}} 
+\index{DLinkedList.h@{DLinkedList.h}!insertAfter@{insertAfter}}
+\index{insertAfter@{insertAfter}!DLinkedList.h@{DLinkedList.h}}
+\doxysubsubsection{\texorpdfstring{insertAfter()}{insertAfter()}}
+{\footnotesize\ttfamily void insert\+After (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{DLinkedList_8h_a98606062334ae68e7329990b0a12493f}{DLList}} $\ast$}]{the\+List,  }\item[{int}]{new\+Data }\end{DoxyParamCaption})}
+
+
+
+Inserts data after the current element in the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the\+List} & A pointer to the DLList struct. \\
+\hline
+{\em new\+Data} & The data to be inserted (an integer). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{DLinkedList_8h_ad50343513e67bcac102c4b19bbb177be}\label{DLinkedList_8h_ad50343513e67bcac102c4b19bbb177be}} 
+\index{DLinkedList.h@{DLinkedList.h}!insertBefore@{insertBefore}}
+\index{insertBefore@{insertBefore}!DLinkedList.h@{DLinkedList.h}}
+\doxysubsubsection{\texorpdfstring{insertBefore()}{insertBefore()}}
+{\footnotesize\ttfamily void insert\+Before (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{DLinkedList_8h_a98606062334ae68e7329990b0a12493f}{DLList}} $\ast$}]{the\+List,  }\item[{int}]{new\+Data }\end{DoxyParamCaption})}
+
+
+
+Inserts data before the current element in the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the\+List} & A pointer to the DLList struct. \\
+\hline
+{\em new\+Data} & The data to be inserted (an integer). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{DLinkedList_8h_a5dde8a86a52a410677c98a1654fffc53}\label{DLinkedList_8h_a5dde8a86a52a410677c98a1654fffc53}} 
+\index{DLinkedList.h@{DLinkedList.h}!next@{next}}
+\index{next@{next}!DLinkedList.h@{DLinkedList.h}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily void next (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{DLinkedList_8h_a98606062334ae68e7329990b0a12493f}{DLList}} $\ast$}]{the\+List }\end{DoxyParamCaption})}
+
+
+
+Moves the current pointer to the next element in the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the\+List} & A pointer to the DLList struct. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{DLinkedList_8h_a8149a1e0277c15bb531f0c1a39d98807}\label{DLinkedList_8h_a8149a1e0277c15bb531f0c1a39d98807}} 
+\index{DLinkedList.h@{DLinkedList.h}!pop@{pop}}
+\index{pop@{pop}!DLinkedList.h@{DLinkedList.h}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily int pop (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{DLinkedList_8h_a98606062334ae68e7329990b0a12493f}{DLList}} $\ast$}]{the\+List }\end{DoxyParamCaption})}
+
+
+
+Removes an item from the front of the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the\+List} & A pointer to the DLList struct. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The data item removed from the front of the list (an integer). 
+\end{DoxyReturn}
+\mbox{\Hypertarget{DLinkedList_8h_a1f1256059dad7c5f25292ae739fa9906}\label{DLinkedList_8h_a1f1256059dad7c5f25292ae739fa9906}} 
+\index{DLinkedList.h@{DLinkedList.h}!printList@{printList}}
+\index{printList@{printList}!DLinkedList.h@{DLinkedList.h}}
+\doxysubsubsection{\texorpdfstring{printList()}{printList()}}
+{\footnotesize\ttfamily void print\+List (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{DLinkedList_8h_a98606062334ae68e7329990b0a12493f}{DLList}} $\ast$}]{the\+List }\end{DoxyParamCaption})}
+
+
+
+Prints the entire list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the\+List} & A pointer to the DLList struct. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{DLinkedList_8h_a65d27159c330ec669222dfbf42aa789c}\label{DLinkedList_8h_a65d27159c330ec669222dfbf42aa789c}} 
+\index{DLinkedList.h@{DLinkedList.h}!push@{push}}
+\index{push@{push}!DLinkedList.h@{DLinkedList.h}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily int push (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{DLinkedList_8h_a98606062334ae68e7329990b0a12493f}{DLList}} $\ast$}]{the\+List,  }\item[{int}]{new\+Data }\end{DoxyParamCaption})}
+
+
+
+Adds an item to the front of the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the\+List} & A pointer to the DLList struct. \\
+\hline
+{\em new\+Data} & The data item to be added (an integer). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of elements in the DLList after the addition. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{DLinkedList_8h_afb7338bdf88baa664e735ecee02855b9}\label{DLinkedList_8h_afb7338bdf88baa664e735ecee02855b9}} 
+\index{DLinkedList.h@{DLinkedList.h}!size@{size}}
+\index{size@{size}!DLinkedList.h@{DLinkedList.h}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily int size (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{DLinkedList_8h_a98606062334ae68e7329990b0a12493f}{DLList}} $\ast$}]{the\+List }\end{DoxyParamCaption})}
+
+
+
+Returns the number of items in the list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em the\+List} & A pointer to the DLList struct. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The number of elements in the DLList. 
+\end{DoxyReturn}
